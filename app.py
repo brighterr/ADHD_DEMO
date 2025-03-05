@@ -14,7 +14,7 @@ max_tokens = 512
 def load_weibo_data():
     """从Excel文件加载微博内容"""
     try:
-        file_adhd=""
+        file_adhd="ans100.csv"
         df = pd.read_csv(file_adhd)
         return df["weibo_content"].tolist()
     except Exception as e:
